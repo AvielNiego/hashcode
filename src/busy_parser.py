@@ -7,11 +7,10 @@ def parse_warehouse(input_file):
 
 
 def parse_costumers(input_file):
-    return Costumer(
-        [int(_) for _ in input_file.readline().split()],
-        [int(_) for _ in input_file.readline().split()],
-
-    )
+    cos_location = [int(_) for _ in input_file.readline().split()]
+    input_file.readline()
+    products_index = [int(_) for _ in input_file.readline().split()]
+    return Costumer(cos_location, products_index)
 
 
 input_file = open(".\\resources\\busy_day.in")
