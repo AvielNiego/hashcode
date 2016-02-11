@@ -27,4 +27,4 @@ warehouses = [parse_warehouse(input_file) for _ in range(int(warehouses_count))]
 
 costumers_count = int(input_file.readline())
 
-costumers = [parse_costumers(input_file) for _ in range(int(warehouses_count))]
+costumers = [parse_costumers(input_file) for _ in range(int(costumers_count))]
