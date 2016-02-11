@@ -2,13 +2,13 @@ from src.our_classes import Warehouse, Costumer
 
 
 def parse_warehouse(input_file):
-    return Warehouse((int(k) for k in input_file.readline().split()),
+    return Warehouse([int(k) for k in input_file.readline().split()],
                      [int(_) for _ in input_file.readline().split()])
 
 
 def parse_costumers(input_file):
     return Costumer(
-        (int(_) for _ in input_file.readline().split()),
+        [int(_) for _ in input_file.readline().split()],
         [int(_) for _ in input_file.readline().split()],
 
     )
