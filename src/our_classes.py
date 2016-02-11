@@ -1,12 +1,15 @@
-
-
-class Warehouse:
-    def __init__(self, location, products):
+class Vertex():
+    def __init__(self, location):
         self.location = location
+
+
+class Warehouse(Vertex):
+    def __init__(self, location, products):
+        Vertex.__init__(self, location)
         self.products = products
 
 
-class Costumer:
+class Costumer(Vertex):
     def __init__(self, location, products):
-        self.location = location
+        Vertex.__init__(self, location)
         self.products_indexes = products
