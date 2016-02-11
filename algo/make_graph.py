@@ -1,6 +1,5 @@
 import math
 
-import src.busy_parser
 from src import busy_parser
 
 
@@ -17,3 +16,5 @@ g.update(dict.fromkeys([c for c in costumers], []))
 
 for v1 in g.keys():
     g[v1] = [(v2, distance(v1, v2)) for v2 in g.keys()]
+
+print 1

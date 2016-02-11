@@ -13,7 +13,7 @@ def parse_costumers(input_file):
     return Costumer(cos_location, products_index)
 
 
-input_file = open(".\\resources\\busy_day.in")
+input_file = open(r'..\resources\busy_day.in')
 line = input_file.readline()
 
 (rows, cols, drones_count, deadline, max_weight) = [int(_) for _ in line.split()]
